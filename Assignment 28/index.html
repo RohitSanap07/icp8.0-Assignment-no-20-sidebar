@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum of Two Numbers</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script>
+  function sumNumbers() {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+
+    var sum = num1 + num2;
+
+    document.getElementById('result').textContent = 'Sum: ' + sum;
+  }
+</script>
+</head>
+<body>
+ <center> <h2 class="heading1">Calculate your Numbers</h2>
+  <label class="labels" for="num1">Enter 1st number:</label>
+  <input type="number"  class="box1" id="num1"><br>
+  <label class="labels" for="num2">Enter 2nd number:</label>
+  <input type="number" class="box2" id="num2"><br>
+  <button class="btn1" onclick="sumNumbers()">Calculate Sum</button><br><br>
+  <div class="result" id="result"></div></center>
+</body>
+</html>
+
